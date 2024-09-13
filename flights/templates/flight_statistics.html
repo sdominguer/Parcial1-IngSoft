@@ -1,0 +1,9 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Estadísticas de Vuelos</h2>
+<p>Vuelos Nacionales: {{ national_flights }}</p>
+<p>Vuelos Internacionales: {{ international_flights }}</p>
+<p>Precio Promedio Nacionales: {{ average_price_national|floatformat:2 }}</p>
+{% endblock %}
